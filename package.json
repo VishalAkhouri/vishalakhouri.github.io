@@ -1,0 +1,23 @@
+{
+  "name": "vishalakhouri.github.io",
+  "version": "1.0.0",
+  "description": "webpage ",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vishalakhouri/vishalakhouri.github.io.git"
+  },
+  "author": "Akhouri Vishal Sinha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vishalakhouri/vishalakhouri.github.io/issues"
+  },
+  "homepage": "https://github.com/vishalakhouri/vishalakhouri.github.io#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  }
+}
