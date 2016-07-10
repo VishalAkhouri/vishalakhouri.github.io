@@ -57,21 +57,19 @@ section {
     }
     
     &.whoAmI {
-        margin-left: 50px;
-        margin-right: 50px;
-        
-        .whoAmI_intro {
-            margin-top: 100px;
+       .whoAmI_intro {
+            padding: 100px 50px 0 50px;
             font-size: 32px;
         }
         .whoAmI_more {
-            margin-top: 50px;
+            padding: 50px 100px 0 100px;
             font-size: 26px;
         }
     }
     
     &.workedWith {
         div.workedWith_desc {
+            padding: 50px 100px 50px 100px;
             font-size: 32px;
         }
         div.workedWith {
@@ -91,6 +89,7 @@ section {
     
     &.lifeBeautiful {
         div.lifeBeautiful_desc {
+            padding: 200px 100px 0 100px;
             font-size: 32px;
         }
     }

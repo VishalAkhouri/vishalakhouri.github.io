@@ -42,16 +42,14 @@ section {
     section > div div.name {
       color: #ffffff;
       font-size: 52px; }
-  section.whoAmI {
-    margin-left: 50px;
-    margin-right: 50px; }
-    section.whoAmI .whoAmI_intro {
-      margin-top: 100px;
-      font-size: 32px; }
-    section.whoAmI .whoAmI_more {
-      margin-top: 50px;
-      font-size: 26px; }
+  section.whoAmI .whoAmI_intro {
+    padding: 100px 50px 0 50px;
+    font-size: 32px; }
+  section.whoAmI .whoAmI_more {
+    padding: 50px 100px 0 100px;
+    font-size: 26px; }
   section.workedWith div.workedWith_desc {
+    padding: 50px 100px 50px 100px;
     font-size: 32px; }
   section.workedWith div.workedWith {
     display: flex;
@@ -64,4 +62,5 @@ section {
       flex-grow: 1;
       width: 25%; }
   section.lifeBeautiful div.lifeBeautiful_desc {
+    padding: 200px 100px 0 100px;
     font-size: 32px; }
