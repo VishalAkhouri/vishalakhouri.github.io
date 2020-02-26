@@ -33,6 +33,20 @@ section#full {
     height: 100vh;
 }
 
+.parallax {
+  /* The image used */
+  background-image: url('../../img/js1.png');
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 section {
     width: 100%;
     margin-bottom: 20px;
@@ -43,17 +57,23 @@ section {
         height: 100%;
         
         &.headerImage {
-            background-image: url('../../img/sydney1.jpg');
-            -webkit-background-size: cover;
-              -moz-background-size: cover;
-              -o-background-size: cover;
-              background-size: cover;
+          @extend .parallax;
+            //background-image: url('../../img/sydney1.jpg');
+            //-webkit-background-size: cover;
+            //  -moz-background-size: cover;
+            //  -o-background-size: cover;
+            //  background-size: cover;
         }
         
         div.name {
             color: #ffffff;
-            font-size: 52px;
+            font-size: 90px;
+            padding-top: 200px;
         }
+      div.profession {
+        color: #F1C40F;
+        font-size: 52px;
+      }
     }
     
     &.whoAmI {

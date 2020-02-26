@@ -1,2 +1,4 @@
+# local files + node modules
 node_modules
 img/*.db
+.idea

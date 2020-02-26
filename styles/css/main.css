@@ -26,6 +26,17 @@ img {
 section#full {
   height: 100vh; }
 
+.parallax, section > div.headerImage {
+  /* The image used */
+  background-image: url("../../img/js1.png");
+  /* Full height */
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 section {
   width: 100%;
   margin-bottom: 20px;
@@ -33,14 +44,12 @@ section {
   section > div {
     width: 100%;
     height: 100%; }
-    section > div.headerImage {
-      background-image: url("../../img/sydney1.jpg");
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover; }
     section > div div.name {
       color: #ffffff;
+      font-size: 90px;
+      padding-top: 200px; }
+    section > div div.profession {
+      color: #F1C40F;
       font-size: 52px; }
   section.whoAmI .whoAmI_intro {
     padding: 100px 50px 0 50px;
