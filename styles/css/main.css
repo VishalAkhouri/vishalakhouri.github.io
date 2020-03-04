@@ -1,6 +1,6 @@
-/*html { 
-  background: url('../../img/sydney1.jpg') no-repeat center center 
-      fixed; 
+/*html {
+  background: url('../../img/sydney1.jpg') no-repeat center center
+      fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -23,9 +23,6 @@ div {
 img {
   width: 300px; }
 
-section#full {
-  height: 100vh; }
-
 .parallax, section > div.headerImage {
   /* The image used */
   background-image: url("../../img/js1.png");
@@ -38,11 +35,13 @@ section#full {
   background-size: cover; }
 
 section {
-  width: 100%;
   margin-bottom: 20px;
   text-align: center; }
+  section.full {
+    height: 100vh; }
+  section.half {
+    height: 50vh; }
   section > div {
-    width: 100%;
     height: 100%; }
     section > div div.name {
       color: #ffffff;
@@ -51,6 +50,8 @@ section {
     section > div div.profession {
       color: #F1C40F;
       font-size: 52px; }
+    section > div.section-content {
+      margin: 0 100px; }
   section.whoAmI .whoAmI_intro {
     padding: 100px 50px 0 50px;
     font-size: 32px; }
@@ -60,16 +61,22 @@ section {
   section.workedWith div.workedWith_desc {
     padding: 50px 100px 50px 100px;
     font-size: 32px; }
-  section.workedWith div.workedWith {
-    display: flex;
-    display: -webkit-flex;
-    flex-direction: row;
-    -webkit-flex-direction: row;
-    flex-wrap: wrap;
-    -webkit-flex-wrap: wrap; }
-    section.workedWith div.workedWith span {
-      flex-grow: 1;
-      width: 25%; }
+  section.workedWith div.wrapper {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    background-color: #EAECEE;
+    color: #444; }
+    section.workedWith div.wrapper > span {
+      background-color: #ABB2B9;
+      color: #fff;
+      border-radius: 5px;
+      padding: 20px;
+      font-size: 150%; }
+      section.workedWith div.wrapper > span img {
+        height: 100px;
+        width: 200px; }
   section.lifeBeautiful div.lifeBeautiful_desc {
     padding: 200px 100px 0 100px;
     font-size: 32px; }

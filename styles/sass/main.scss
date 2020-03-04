@@ -1,6 +1,6 @@
-/*html { 
-  background: url('../../img/sydney1.jpg') no-repeat center center 
-      fixed; 
+/*html {
+  background: url('../../img/sydney1.jpg') no-repeat center center
+      fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -29,9 +29,6 @@ div {
 img {
     width: 300px
 }
-section#full {
-    height: 100vh;
-}
 
 .parallax {
   /* The image used */
@@ -48,21 +45,22 @@ section#full {
 }
 
 section {
-    width: 100%;
     margin-bottom: 20px;
     text-align: center;
-    
+
+    &.full {
+      height: 100vh;
+    }
+
+    &.half {
+      height: 50vh;
+    }
+
     > div {
-        width: 100%;
         height: 100%;
         
         &.headerImage {
           @extend .parallax;
-            //background-image: url('../../img/sydney1.jpg');
-            //-webkit-background-size: cover;
-            //  -moz-background-size: cover;
-            //  -o-background-size: cover;
-            //  background-size: cover;
         }
         
         div.name {
@@ -70,10 +68,15 @@ section {
             font-size: 90px;
             padding-top: 200px;
         }
-      div.profession {
-        color: #F1C40F;
-        font-size: 52px;
-      }
+
+        div.profession {
+          color: #F1C40F;
+          font-size: 52px;
+        }
+
+        &.section-content {
+          margin: 0 100px;
+        }
     }
     
     &.whoAmI {
@@ -92,17 +95,26 @@ section {
             padding: 50px 100px 50px 100px;
             font-size: 32px;
         }
-        div.workedWith {
-            display: flex;
-            display: -webkit-flex;
-            flex-direction: row;
-            -webkit-flex-direction: row;
-            flex-wrap: wrap;
-            -webkit-flex-wrap: wrap;
+        div.wrapper {
+            display: grid;
+            justify-content: space-evenly;
+            // grid-template-columns: 250px 250px 250px 250px 250px;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 10px;
+            background-color: #EAECEE;
+            color: #444;
 
-            span {
-                flex-grow: 1;
-                width: 25%;   
+            > span {
+                background-color: #ABB2B9;
+                color: #fff;
+                border-radius: 5px;
+                padding: 20px;
+                font-size: 150%;
+
+                img {
+                  height: 100px;
+                  width: 200px;
+                }
             }
         } 
     }
